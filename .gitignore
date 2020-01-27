@@ -1,3 +1,13 @@
+.gradle/
+.idea/
+/build/
+*.iml
+/logs/
+/config/
+clover
+/out/
+local.conf
+
 # Compiled class file
 *.class
 
