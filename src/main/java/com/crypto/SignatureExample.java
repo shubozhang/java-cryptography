@@ -21,7 +21,7 @@ public class SignatureExample {
         byte[] input = "The Lord of the Rings has been read by many people".getBytes();
         printText("input", input);
 
-        // Signature
+        // Signature: both hashing and encryption
         Signature signature = Signature.getInstance("SHA256WithRSA");
         signature.initSign(keyPair.getPrivate());
         signature.update(input);

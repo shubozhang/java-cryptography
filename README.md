@@ -1,9 +1,9 @@
 # Java Cryptography
 
 What does cryptography solve?
-* Confidentiality
-* Integrity
-* Authenticity
+* Confidentiality (encryption)
+* Integrity (digital signatures)
+* Authenticity (certificate)
 
 
 Contemporary Cryptography
