@@ -9,8 +9,8 @@ import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
 
-import static com.crypto.Utils.printByteArray;
-import static com.crypto.Utils.printText;
+import static com.crypto.util.UtilTools.printByteArray;
+import static com.crypto.util.UtilTools.printText;
 
 public class AsymmetricEncryption {
     public static void main(String[] args) throws NoSuchPaddingException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException, IllegalBlockSizeException {

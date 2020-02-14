@@ -1,8 +1,8 @@
 package com.crypto;
 
 import java.security.*;
-import static com.crypto.Utils.printByteArray;
-import static com.crypto.Utils.printText;
+import static com.crypto.util.UtilTools.printByteArray;
+import static com.crypto.util.UtilTools.printText;
 
 public class SignatureExample {
 

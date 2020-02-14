@@ -9,9 +9,15 @@ repositories {
 }
 
 apply plugin: 'java'
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 11
+targetCompatibility = 11
 
 dependencies {
+    compile 'org.bouncycastle:bcprov-jdk15on:1.64'
+    compile 'org.bouncycastle:bcmail-jdk15on:1.64'
+    compile 'commons-codec:commons-codec:1.11'
+    compile 'org.apache.pdfbox:pdfbox:2.0.16'
+    compile 'org.apache.ws.security:wss4j:1.6.19'
+    compile 'org.apache.logging.log4j:log4j-core:2.11.1'
     testCompile "junit:junit:4.12"
 }

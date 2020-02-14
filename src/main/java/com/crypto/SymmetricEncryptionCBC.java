@@ -4,16 +4,18 @@ import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;
 import java.security.*;
 
-import static com.crypto.Utils.printByteArray;
-import static com.crypto.Utils.printText;
+import static com.crypto.util.UtilTools.printByteArray;
+import static com.crypto.util.UtilTools.printText;
 
+
+// CBC: CCBCipher Block Chaining
 public class SymmetricEncryptionCBC {
 
     public static void main(String[] args) throws NoSuchPaddingException, InvalidKeyException, NoSuchAlgorithmException, IllegalBlockSizeException, BadPaddingException, InvalidAlgorithmParameterException {
         symmetricEncryptionCBCTest();
     }
 
-    // CBC: CCBCipher Block Chaining
+
     private static void symmetricEncryptionCBCTest() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
         // Generate key
         KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");

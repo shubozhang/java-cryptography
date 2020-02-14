@@ -1,6 +1,6 @@
-package com.crypto;
+package com.crypto.util;
 
-public class Utils {
+public class UtilTools {
 
     public static void printByteArray(String arryName, byte[] digest) {
         //Converting the byte array in to HexString format

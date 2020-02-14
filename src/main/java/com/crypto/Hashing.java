@@ -3,7 +3,7 @@ package com.crypto;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import static com.crypto.Utils.printByteArray;
+import static com.crypto.util.UtilTools.printByteArray;
 
 public class Hashing {
 

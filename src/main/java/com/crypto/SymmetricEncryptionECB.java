@@ -5,16 +5,17 @@ import java.security.InvalidKeyException;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
 
-import static com.crypto.Utils.printByteArray;
-import static com.crypto.Utils.printText;
+import static com.crypto.util.UtilTools.printByteArray;
+import static com.crypto.util.UtilTools.printText;
 
+// ECB: Electronic CopyBook Encryption. It cannot be used for image encryption
 public class SymmetricEncryptionECB {
 
     public static void main(String[] args) throws NoSuchAlgorithmException, InvalidKeyException, NoSuchPaddingException, BadPaddingException, IllegalBlockSizeException {
         symmetricEncryptionECBTest();
     }
 
-    // ECB: Electronic CopyBook Encryption. It cannot be used for image encryption
+
     private static void symmetricEncryptionECBTest() throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
         // Generate key
         KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
